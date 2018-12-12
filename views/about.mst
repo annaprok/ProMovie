@@ -1,0 +1,18 @@
+<!doctype html>
+{{ > head}}
+<body>
+{{ > header}}
+    <div class="row">
+      <div class="monocolumn">
+        <div class="card">
+          <h2>What is ProMovie?</h2>
+          <div><img src="images/hbirthday.jpg" alt="Happy Birthday!"></div>
+          <p>ProMovie is a new way of watching films and serials.</p><p> Here you can find complete information about the world premiers. Decide what film to watch and where using our database! ProMovie provides local movie showtimes, ticketing, trailers, critic and user reviews, personalized recommendations, photo galleries, entertainment news, quotes, trivia, box-office data, editorial feature sections and a universal Watchlist. Get personalized recommendations and discover new movies and shows you'll love! Share a review of your favorite movies and shows with the community of entertainment fans!</p><p>Join us!</p>
+    </div>
+    </div>
+    
+  </div>
+  
+  {{ > footer}}
+</body>
+</html>

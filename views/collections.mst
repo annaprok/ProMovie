@@ -1,0 +1,63 @@
+<!doctype html>
+{{ > head}}
+<body>
+{{ > header}}
+
+
+
+      <div class="row">
+        <div class="leftcolumn">
+        <div class="box">
+        <div class="card">
+        <ol> 
+                {{#collections}}
+            
+               
+            <li><a href={{colHr}}>{{colName}} </a>
+            <p>{{colDscrptn}}</p>
+            </li>
+            {{/collections}}
+            </ol> 
+            </div>
+        {{#user.isAdmin}}
+       <div class="card">
+        <form action="/collections/new" method="GET">
+          <input type="submit" value="Create">
+        </form>
+        </div>
+        {{/user.isAdmin}}
+        </div>
+        </div>
+      
+      <div class="rightcolumn">
+        <div class="card">
+          <form action="/collections/search" method="GET">
+          <fieldset>
+              Search:<br>
+              <input type="search" name="search" value={{value}}><br>
+              <input type="submit" value="Submit">
+            </fieldset>
+          </form>
+        </div>
+
+          <div class="card">
+            <h2>Related News</h2>
+            <div class="img" style="height:100px;">Image</div>
+            <p>Some text in culpa qui officia deserunt mollit anim..</p>
+          </div>
+          <div class="card">
+            <h3>Coming soon</h3>
+            <div class="img"><p>Image</p></div>
+            <div class="img"><p>Image</p></div>
+            <div class="img"><p>Image</p></div>
+          </div>
+          <div class="card">
+            <h3>Follow Us</h3>
+            <p>Follow Us On Facebook</p>
+          </div>
+        </div>
+      </div>
+      
+      {{ > footer}}
+</body>
+</html>

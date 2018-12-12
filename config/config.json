@@ -1,0 +1,10 @@
+{
+    "connectionString": "mongodb://a1:swju200erA@ds151523.mlab.com:51523/promovie",
+    "secret": "Some_secret^string",
+    "cloud":{
+        "cloud_name":"dvygatfxn",
+        "api_key":"244943365867919",
+        "api_secret": "gHvtuF7cxMDHu3VP-Tw43-SwtBQ"
+    }
+
+}

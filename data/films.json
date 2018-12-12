@@ -1,0 +1,122 @@
+{
+    "nextId": 9,
+    "items": [
+        {
+            "id": 0,
+            "filmImg": "/predator.jpg",
+            "filmHr": "/films/1/1",
+            "filmDscrptn": "When a young boy accidentally triggers the universe's most lethal hunters' return to Earth, only a ragtag crew of ex-soldiers and a disgruntled science teacher can prevent the end of the human race.",
+            "filmName": "Predator",
+            "director": "Shane Black",
+            "writers": "Fred Dekker",
+            "stars": "Boyd Holbrook",
+            "date": "2014/05/13 13:20:06",
+            "rate": "4.5",
+            "duration": "90"
+        },
+        {
+            "id": 1,
+            "filmImg": "/simple_favour.jpg",
+            "filmHr": "/films/1/2",
+            "filmDscrptn": "A SIMPLE FAVOR, directed by Paul Feig, centers around Stephanie (Anna Kendrick), a mommy blogger who seeks to uncover the truth behind her best friend Emily's (Blake Lively) sudden disappearance from their small town.",
+            "filmName": "A Simple Favor",
+            "director": "Paul Feig",
+            "writers": "Jessica Sharzer (screenplay by)",
+            "stars": "Anna Kendrick",
+            "date": "2018/05/13 16:30:59",
+            "rate": "4.5",
+            "duration": "85"
+        },
+        {
+            "id": 2,
+            "filmImg": "/nutcracker.jpg",
+            "filmHr": "/films/1/3",
+            "filmDscrptn": "A young girl is transported into a magical world of gingerbread soldiers and an army of mice. ",
+            "filmName": "The Nutcracker and the Four Realms",
+            "director": "Lasse Hallström",
+            "writers": "Jessica Sharzer (screenplay by)",
+            "stars": " Mackenzie Foy",
+            "date": "2018/12/08 13:20:06",
+            "rate": "3.2",
+            "duration": "99"
+        },
+        {
+            "id": 3,
+            "filmImg": "/nutcracker.jpg",
+            "filmHr": "/films/1/4",
+            "filmDscrptn": "Some text",
+            "filmName": "Mickey",
+            "director": "",
+            "writers": "",
+            "stars": "",
+            "date": "",
+            "rate": "",
+            "duration": ""
+        },
+        {
+            "id": 4,
+            "filmImg": "/bohemian_rapsody.jpg",
+            "filmHr": "/films/1/6",
+            "filmDscrptn": "Some text",
+            "filmName": "Mickey2",
+            "director": "",
+            "writers": "",
+            "stars": "",
+            "date": "",
+            "rate": "",
+            "duration": ""
+        },
+        {
+            "id": 5,
+            "filmImg": "/nutcracker.jpg",
+            "filmHr": "/films/1/6",
+            "filmDscrptn": "Some text",
+            "filmName": "Mickey3",
+            "director": "",
+            "writers": "",
+            "stars": "",
+            "date": "",
+            "rate": "",
+            "duration": ""
+        },
+        {
+            "id": 6,
+            "filmImg": "/bohemian_rapsody.jpg",
+            "filmHr": "/films/1/7",
+            "filmDscrptn": "Some text",
+            "filmName": "Mickey4",
+            "director": "",
+            "writers": "",
+            "stars": "",
+            "date": "",
+            "rate": "",
+            "duration": ""
+        },
+        {
+            "id": 7,
+            "filmImg": "/nutcracker.jpg",
+            "filmHr": "/films/1/8",
+            "filmDscrptn": "Some text",
+            "filmName": "Mickey5",
+            "director": "",
+            "writers": "",
+            "stars": "",
+            "date": "",
+            "rate": "",
+            "duration": ""
+        },
+        {
+            "id": 8,
+            "filmImg": "/nutcracker.jpg",
+            "filmHr": "/films/1/9",
+            "filmDscrptn": "Some text",
+            "filmName": "Mickey5",
+            "director": "",
+            "writers": "",
+            "stars": "",
+            "date": "",
+            "rate": "",
+            "duration": ""
+        }
+    ]
+}

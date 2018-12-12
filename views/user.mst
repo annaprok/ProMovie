@@ -1,0 +1,32 @@
+<!doctype html>
+{{ > head}}
+<body>
+{{ > header}}
+
+    <div class="row">
+      <div class="monocolumn">
+        <div class="card">
+          <div class="usrimg"><img src= "{{avaUrl}}" ></div>
+          <h2> {{fullname}} </h2>
+          <p>({{login}}) {{registeredAt}} </p>
+          <div>{{bio}}</div>
+       </div>
+       {{#user.isAdmin}}
+       <div class="card">
+        <span><form action="/users/delete" method="POST" enctype="multipart/form-data">
+          <input type="hidden" name="id" value={{_id}}>
+          <input type="submit" value="Delete">
+        </form></span>
+        <span><form action="/users/onupdate" method="POST" enctype="multipart/form-data">
+          <input type="hidden" name = "id" value={{_id}}>
+          <input type="submit" value="Update">
+        </form></span>
+      </div>
+      {{/user.isAdmin}}
+      </div>
+    </div>
+    {{ > footer}}
+
+    
+</body>
+</html>

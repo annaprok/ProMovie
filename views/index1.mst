@@ -1,0 +1,49 @@
+<!doctype html>
+{{ > head}}
+<body>
+<div class="header">
+      
+      <img width="325" height="128" style="border-radius: 10px" src="../../images/logo2.png" alt="logo">
+      <p>This is web source for movie, TV and celebrity content</p>
+  </div>
+
+<div class="mainMenu">
+      <a href="/">Home</a>
+      <a href="/auth/login">Login</a>
+      <a href="/auth/register">Register</a>
+      <a href="/about" style="float:right">About</a>
+
+</div>
+    <div class="row">
+        <div class="rightcolumn">
+            <div class="card">
+              <h2>About Creator</h2>
+              <div class="img" style="height:100px;">Image</div>
+              <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+            </div>
+            <div class="card">
+              <h3>Coming soon</h3>
+              <div class="img"><p>Image</p></div>
+              <div class="img"><p>Image</p></div>
+              <div class="img"><p>Image</p></div>
+            </div>
+            <div class="card">
+              <h3>Follow Us</h3>
+              <p>Follow Us On Facebook</p>
+            </div>
+          </div>
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>Happy birthday ProMovie!</h2>
+          <h5>Our site creation, Sep 14, 2018</h5>
+          <div><img src="../images/hbirthday.jpg" alt="Happy Birthday!"></div>
+          <p>What is ProMovie?</p>
+          <p>ProMovie is a new way of watching films and serials.</p><p> Here you can find complete information about the world premiers. Decide what film to watch and where using our database! ProMovie provides local movie showtimes, ticketing, trailers, critic and user reviews, personalized recommendations, photo galleries, entertainment news, quotes, trivia, box-office data, editorial feature sections and a universal Watchlist. Get personalized recommendations and discover new movies and shows you'll love! Share a review of your favorite movies and shows with the community of entertainment fans!</p><p>Join us!</p>
+    </div>
+    </div>
+    
+  </div>
+  
+  {{ > footer}}
+</body>
+</html>

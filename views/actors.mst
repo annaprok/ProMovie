@@ -1,0 +1,47 @@
+<!doctype html>
+{{ > head}}
+<body>
+{{ > header}}
+      <div class="row">
+        <div class="leftcolumn">
+                <ol> 
+                {{#actors}}
+          <div class="card">
+              <span><div class="filmimg"><img src={{actorImg}}></div>
+            <div class="box">
+               
+            <li><a href={{hr}}>{{fullname}} </a></li>
+            <p>{{bio}}</p>
+            </div></span>
+            </div>
+            {{/actors}}
+            </ol> 
+            {{#user.isAdmin}}
+            <div class="card">
+              <form action="/actors/new" method="GET">
+                <input type="submit" value="Create">
+              </form>
+              </div>
+            {{/user.isAdmin}}
+        </div>
+      <div class="rightcolumn">
+          <div class="card">
+            <h2>Related News</h2>
+            <div class="img" style="height:100px;">Image</div>
+            <p>Some text in culpa qui officia deserunt mollit anim..</p>
+          </div>
+          <div class="card">
+            <h3>Coming soon</h3>
+            <div class="img"><p>Image</p></div>
+            <div class="img"><p>Image</p></div>
+            <div class="img"><p>Image</p></div>
+          </div>
+          <div class="card">
+            <h3>Follow Us</h3>
+            <p>Follow Us On Facebook</p>
+          </div>
+        </div>
+      </div>
+      {{ > footer}}
+</body>
+</html>

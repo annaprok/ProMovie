@@ -1,0 +1,64 @@
+<!doctype html>
+{{ > head}}
+<body>
+{{ > header}}
+
+
+
+      <div class="row">
+        <div class="leftcolumn">
+        <div class="card">
+          <form action="/users/update" method="POST" enctype="multipart/form-data">
+            <fieldset>
+              <legend>User information:</legend>
+              Fullname:<br>
+              <input type="text" name="fullname" value={{fullname}}><br>
+              Biography:<br>
+              <textarea name="bio" rows="10" cols="30">{{bio}}</textarea>
+              <br>
+              {{#user.isAdmin}}
+              <input type="checkbox" name="isAdmin" {{#isAdmin}}value="on"{{/isAdmin}}> Admin<br>
+              {{/user.isAdmin}}
+              Login:<br>
+              <input type="text" name="login" value={{login}} ><br>
+              Password:<br>
+              <input type="password" name="password" ><br><br>
+              <input type="hidden" name="passPrev" value = {{password}}><br>
+              Email:<br>
+              <input type="email" name="email" value={{email}}><br><br>
+              User logo:<br>
+              <div class="usrimg"><img src= "{{avaUrl}}" ></div><br>
+              <input type="hidden" name="avaUrl" value = {{avaUrl}} ><br>
+              Choose new logo:<br>
+              <input type="file" name="usrAva"><br>
+              <input type="hidden" name="id" value = {{_id}}><br>
+              <input type="submit" value="Submit">
+            </fieldset>
+          </form>
+
+       </div>
+        </div>
+        
+      
+      <div class="rightcolumn">
+          <div class="card">
+            <h2>Related News</h2>
+            <div class="img" style="height:100px;">Image</div>
+            <p>Some text in culpa qui officia deserunt mollit anim..</p>
+          </div>
+          <div class="card">
+            <h3>Coming soon</h3>
+            <div class="img"><p>Image</p></div>
+            <div class="img"><p>Image</p></div>
+            <div class="img"><p>Image</p></div>
+          </div>
+          <div class="card">
+            <h3>Follow Us</h3>
+            <p>Follow Us On Facebook</p>
+          </div>
+        </div>
+      </div>
+      
+      {{ > footer}}
+</body>
+</html>

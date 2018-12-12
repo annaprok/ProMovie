@@ -1,0 +1,82 @@
+<!doctype html>
+{{ > head}}
+<body>
+{{ > header}}
+
+
+
+      <div class="row">
+        <div class="leftcolumn">
+        {{#films.length}}
+        {{#films}}
+          <div class="card" >
+              <span><div class="filmimg"><img src={{filmImg}}></div>
+            <div class="box"  >
+            <h2><a href={{filmHr}}>{{filmName}}</a></h2>
+            <p>{{filmDscrptn}}</p>
+            <h5>Director: {{director}}</h5>
+              <p><h5>Writers:</h5> {{#writers}} {{.}} {{/writers}}</p>
+              </div></span>
+            </div>
+        {{/films}}
+        {{/films.length}}
+        {{^films.length}}
+        <div class="card" >
+        <div class="box"  >
+          <span><bald>No films</bald></span>
+          </div>
+          </div>
+         {{/films.length}}
+        <div>
+       {{#pages}}
+       {{#status}}
+          <span><a href={{status}}>{{id}}</a></span>
+         {{/status}}
+         {{^status}} 
+            <span>{{id}}</span>
+         {{/status}}
+       {{/pages}}
+       </div>
+       {{#user.isAdmin}}
+       <div class="card">
+        <form action="/films/new" method="GET">
+          <input type="submit" value="Create">
+        </form>
+        </div>
+        {{/user.isAdmin}}
+        </div>
+      
+      <div class="rightcolumn">
+        <div class="card">
+          <form action="/films/search" method="GET">
+          <fieldset>
+              Search:<br>
+              <input type="search" name="search" value={{value}}><br>
+  
+              <input type="submit" value="Submit"><br>
+              Results: {{resNum}}
+            </fieldset>
+          </form>
+        </div>
+
+          <div class="card">
+            <h2>Related News</h2>
+            <div class="img" style="height:100px;">Image</div>
+            <p>Some text in culpa qui officia deserunt mollit anim..</p>
+          </div>
+          <div class="card">
+            <h3>Coming soon</h3>
+            <div class="img"><p>Image</p></div>
+            <div class="img"><p>Image</p></div>
+            <div class="img"><p>Image</p></div>
+          </div>
+          <div class="card">
+            <h3>Follow Us</h3>
+            <p>Follow Us On Facebook</p>
+          </div>
+        </div>
+      </div>
+      
+      {{ > footer}}
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+{{ > head}}
+<body>
+{{ > header}}
+    <div class="row">
+        <div class="monocolumn".
+        <div class="card">
+          <table >
+            <tr>
+              <th>Login</th>
+              <th>Fullname</th>
+              <th>Registered</th>
+            </tr>
+            {{#userTbl}}
+            <tr>
+              <td><a href = {{hr}}>user{{_id}}</a></td>
+              <td><a href = {{hr}}>{{fullname}}</a></td>
+              <td>{{registeredAt}}</td>
+            </tr>
+            {{/userTbl}}
+          </table>
+          <div class="card">
+        <form action="/users/new" method="GET">
+          <input type="submit" value="Create">
+        </form>
+        </div>
+        </div>
+        
+        </div>
+         
+  </div>
+  {{ > footer}}
+</body>
+</html>

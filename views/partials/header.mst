@@ -1,0 +1,19 @@
+<div class="header">
+      
+      <img width="325" height="128" style="border-radius: 10px" src="../../images/logo2.png" alt="logo">
+      <p>This is web source for movie, TV and celebrity content</p>
+  </div>
+
+<div class="mainMenu">
+      <a href="/">Home</a>
+      {{#user.isAdmin}}
+      <a href="/users">Users</a>
+      {{/user.isAdmin}}
+      <a href="/films?page=1">Films</a>
+      <a href="/actors">Actors</a>
+      <a href="/collections?page=1">Collections</a>
+      <a href="/auth/logout">Logout</a>
+      <a href="/about" style="float:right">About</a>
+      <a href="/profile" style="float:right"> Username: {{user.fullname}}</a>
+
+</div>

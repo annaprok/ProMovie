@@ -1,0 +1,86 @@
+<!doctype html>
+{{ > head}}
+<body>
+{{ > header}}
+
+
+      <div class="row">
+        <div class="somecolumn">
+            <div class="card">
+            <h1 id="restapiv1">REST API v1</h1>
+            
+            <h2 id="">
+            Огляд
+            </h2> 
+            <h3 id="-1">Точки доступу</h3> 
+            <p>Весь доступ до API відбувається через HTTPS та базовий URL <code>http://localhost:3000/api/v1/</code>. Всі дані відправляються і отримуються у форматі JSON.</p> <p>Час подається у форматі [ISO 8601][date-iso]:</p> <pre><code>YYYY-MM-DDTHH:MM:SSZ </code></pre> <p>[Коренева точка доступу][api-root] до ProMovie API:</p> <pre><code>GET https://progbase.herokuapp.com/api/v1 </code></pre> <p>Повертає словник зі всіма ресурсами, що доступні у API.</p> <h3 id="-2">Аутентифікація</h3> 
+            <h4 id="-3">Базова аутентифікація</h4> <p>Частина ресурсів доступні без аутентифікації, але деякі із ресурсів потребують [базової аутентифікації][basic-auth] для доступу до них. </p> <p>Якщо запит до такого ресурсу не міститиме даних користувача, то відповіддю буде статус <code>401 Unauthorized</code>.</p> <h2 id="-4">Дізнатися ім'я авторизованого користувача</h2><p><code>GET /api/v1/films</code></p>
+            <h2 id="-4">Фільми</h2> <h3 id="-5">Список фільмів</h3> <p><code>GET /api/v1/me</code></p>
+            <p> Відповідь:</p> <pre><code class="json">
+            <pre> 
+            {{js1}}
+            </pre>
+             <h3 id="-6">Отримати фільм</h3> <p><code>GET /api/v1/film/:film_id</code></p> 
+             <p>Відповідь:</p>
+             <pre> 
+            {{js2}}
+            </pre>
+              <h3 id="-7">Створити новии фільм</h3> <p><code>POST /api/v1/films/new</code></p> 
+              <p>Відповідь:</p> 
+              <pre> 
+            {{js3}}
+            </pre>
+               <h3 id="-8">Видалити фільм</h3> <p><code>DELETE /api/v1/films/:id</code></p>
+               <h3 id="-9">Оновити фільм</h3> <p><code>PUT api/v1/films/:id</code></p> 
+               <p>Відповідь:</p> 
+               <pre><code class="json">{{js8}} </code></pre> 
+               <h2 id="-10">Користувачі</h2> <h3 id="-11">Отримати інформацію про всіх користувачів</h3> <p><code>GET /api/v1/users</code></p> 
+               <p>Відповідь:</p> 
+               <pre> 
+             {{js4}}
+             </pre> <h3 id="-12">Отримати інформацію про користувача</h3> <p><code>GET /api/v1/users/:user_id</code></p> 
+             <p>Відповідь:</p>
+             <pre> 
+            {{js5}}
+            </pre> 
+            <h3 id="-13">Створити нового користувача</h3> <p><code>POST /api/v1/users/new</code></p> 
+            <p>Відповідь:</p> 
+            <pre> 
+            {{js6}}
+            </pre>
+             <h3 id="-14">Видалити користувача</h3> <p><code>POST /api/v1/users/delete</code></p> 
+             <p>Відповідь:</p> <pre><code class="json">OK </code></pre> 
+             <h2 id="-15">Колекції</h2> 
+             <h3 id="-16">Список всіх колекцій</h3> <p><code>GET /api/v1/collections</code></p> 
+             <p>Відповідь:</p> 
+             <pre> 
+            {{js7}}
+            </pre> <h3 id="-17">Отримати інформацію про колекцію</h3> <p><code>GET /api/v1/collections/:collection_id</code></p> 
+            <p>Відповідь:</p> <pre><code class="json">{ "_id": "5be6e0e2ab93751ed6496d99", "colName": "Collection 1", "colDscrptn": "Some text 1", "films": [ { "_id": "5be6e08fab93751ed6496d97", "filmImg": "/simple_favour.jpg", "filmHr": "/films/5be6e08fab93751ed6496d97", "filmDscrptn": "Some text", "filmName": "Some film 3", "writers": "", "stars": "", "date": null, "rate": null, "duration": null, "__v": 0 } ] } </code></pre> <h3 id="-17">Створити нову колекцію</h3> <p><code>POST /api/v1/collections/new</code></p> <p>Відповідь:</p> <pre><code class="json">{ "_id": "5be6e0e2ab93751ed6496d99", "colName": "Collection 1", "colDscrptn": "Some text 1", "films": [ { "_id": "5be6e08fab93751ed6496d97", "filmImg": "/simple_favour.jpg", "filmHr": "/films/5be6e08fab93751ed6496d97", "filmDscrptn": "Some text", "filmName": "Some film 3", "writers": "", "stars": "", "date": null, "rate": null, "duration": null, "__v": 0 } ] } </code></pre> <h3 id="-18">Видалити колекцію</h3> <p><code>POST /api/v1/collections/delete</code></p> <p>Відповідь:</p> <pre><code class="json">OK </code></pre> <h3 id="-19">Пошук колекції за ім'ям</h3> <p><code>GET /api/v1/collections/search</code></p>
+        </div>
+        </div>
+      
+      <div class="rightcolumn">
+          <div class="card">
+            <h2>Related News</h2>
+            <div class="img" style="height:100px;">Image</div>
+            <p>Some text in culpa qui officia deserunt mollit anim..</p>
+          </div>
+          <div class="card">
+            <h3>Coming soon</h3>
+            <div class="img"><p>Image</p></div>
+            <div class="img"><p>Image</p></div>
+            <div class="img"><p>Image</p></div>
+          </div>
+          <div class="card">
+            <h3>Follow Us</h3>
+            <p>Follow Us On Facebook</p>
+          </div>
+        </div>
+      </div>
+
+      
+      
+      {{ > footer}}
+</body>
+</html>
